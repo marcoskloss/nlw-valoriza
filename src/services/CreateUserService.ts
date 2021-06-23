@@ -15,7 +15,6 @@ class CreateUserService {
     }
     
     const userRepository = getCustomRepository(UserRepository)
-    console.log(userRepository)
     const userAlreadyExists = await userRepository.findOne({
       email
     })
