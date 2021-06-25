@@ -5,7 +5,7 @@ import {
   UpdateDateColumn, 
   CreateDateColumn 
 } from 'typeorm'
-import { v4 } from 'uuid'
+import { v4 as uuid } from 'uuid'
 
 @Entity('tags')
 class Tag {
@@ -23,7 +23,7 @@ class Tag {
 
   constructor() {
     if (!this.id) {
-      this.id = v4()
+      this.id = uuid()
     }
   }
 }
