@@ -45,3 +45,5 @@ class Compliment {
     }
   }
 }
+
+export { Compliment }
